@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+:root {
+  --main-color: #6b46c1;
+  --card-color: #f0eafb;
+  --head-text: #ffffff;
+  --text-color: #171923;
+  --card-text: #2d3748;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--secondary-text);
+  font-weight: 800;
+  font-size: 1.6em;
+  text-align: center;
+  line-height: 0.6em;
+  margin-bottom: 1em;
+}
+button {
+  background-color: var(--main-color);
+  color: var(--head-text);
+  padding: 1em;
+  width: 200px;
+  border-radius: 8px;
+  border: none;
+}
+p {
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+.first-section {
+  background-color: var(--main-color);
+  padding: 3em 1em;
+  height: 25em;
+  width: 100%;
+}
+.first-section h1 {
+  color: var(--head-text);
+  text-align: left;
+  line-height: 1.3em;
+}
+.first-section p {
+  color: var(--head-text);
+}
+.card-section {
+  height: 28em;
+  position: relative;
+  margin: 0 1em;
+  background-color: var(--head-text);
+}
+.card-container {
+  position: absolute;
+  z-index: 1;
+  top: -160px;
+  width: 100%;
+  height: 35em;
+  display: flex;
+  flex-direction: column;
+}
+.col-left {
+  background-color: var(--card-color);
+  padding: 3em 2em 2em;
+  text-align: center;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 13px 13px 0px 0px;
+
+}
+.col-left h2 {
+  font-weight: 800;
+  font-size: 2.5em;
+  margin-bottom: 0.6em;
+}
+.col-left p {
+  text-align: center;
+  margin-bottom: 2em;
+}
+.col-right {
+  padding: 2em 1em 2em;
+  background-color: var(--head-text);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 0px 0px 13px 13px;
+
+
+}
+.col-right p {
+  color: var(--card-text);
+  line-height: 2em;
+  font-weight: 500;
+}
+span {
+  margin-right: 0.7em;
+  text-align: center;
+}
+.second-section {
+  padding: 1em;
+  width: 100%;
+}
+.feature-sect {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1em;
+}
+.features {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: .5em;
+}
+.feature-sect h3 {
+  color: var(--secondary-text);
+  font-weight: 800;
+  font-size: 1em;
+  text-align: left;
+  line-height: 1.5em;
+  margin: 0em 0em 0.5em 1em;
+}
+@media screen and (min-width: 1024px) {
+  .first-section h1 {
+    text-align: center;
+    font-size: 3em;
+    line-height: 0.5em;
+  }
+  .first-section p {
+    text-align: center;
+  }
+  .card-section {
+    margin: 0 10em;
+    height: 12em;
+  }
+  .card-container {
+    height: 20em;
+    display: flex;
+    flex-direction: row;
+/* justify-content: center;
+align-content: center;  */
+ }
+  .col-left {
+    padding: 3em 5em 1em 5em;
+    border-radius: 13px 0px 0px 13px;
+
+  }
+  .col-right{
+    border-radius: 0px 13px 13px 0px;
+
+  }
+
+  .col-right p {
+   line-height: 2.7em;
+   padding-right:1em ;
+ }
+ .feature-sect {
+  width: 65%;
+  justify-content: center;
+  align-content: center;
+margin: 0 auto;}
+}
